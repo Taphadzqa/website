@@ -10,16 +10,19 @@
 
   --fontweight-thin: 100;
   --fontweight-regular: 400;
-  --fontweight-bold: 500;
+  --fontweight-bold: 600;
   --fontweight-bolder: 700;
   --fontweight-thick: 900;
 
+  --fontsize-100: .785rem;
+  --fontsize-200: .85rem;
   --fontsize-300: .875rem;
   --fontsize-400: 1rem;
   --fontsize-500: 1.5rem;
   --fontsize-600: 2rem;
   --fontsize-700: 2.5rem;
   --fontsize-800:  3rem;
+  --fontsize-900:  3.5rem;
 
   --fontsize-body: var(--fontsize-400);
   --fontsize-primary-heading: var(--fontsize-800);
@@ -32,6 +35,8 @@
   :root {
     --fontsize-600: 2.5rem;
     --fontsize-700: 3.5rem;
+    --fontsize-800: 4rem;
+    --fontsize-900: 5rem;
 
     --fontsize-body: var(--fontsize-400);
     --fontsize-primary-heading: var(--fontsize-900);
@@ -74,6 +79,7 @@ body {
 body {
   text-rendering: optimizeSpeed;
   line-height: 1.5;
+  font-family: var(--font-family-body);
 }
 
 /* A elements that don't have a class get default styles */
@@ -150,6 +156,12 @@ svg {
 .fs-secondary-heading {
   font-size: var(--fontsize-secondary-heading);
 }
+.fs-100 {
+  font-size: var(--fontsize-100);
+}
+.fs-200 {
+  font-size: var(--fontsize-200);
+}
 .fs-300 {
   font-size: var(--fontsize-300);
 }
@@ -167,4 +179,7 @@ svg {
 }
 .fs-800 {
   font-size: var(--fontsize-800);
+}
+.fs-900 {
+  font-size: var(--fontsize-900);
 }
